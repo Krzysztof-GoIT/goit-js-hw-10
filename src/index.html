@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <script src="https://unpkg.com/slim-select@latest/dist/slimselect.min.js"></script>
+    <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet"></link>
   </head>
   <body>
-    <h1>Example title</h1>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <select id="slim-bar" class="breed-select is-hidden"></select>
+    <p class="loader">Loading data, please wait...</p>
+    <p class="error is-hidden">
+      Oops! Something went wrong! Try reloading the page!
+    </p>
+    <div class="cat-info"></div>
+
+    <script src="index.js" type="module"></script>
   </body>
 </html>
