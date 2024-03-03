@@ -18,6 +18,7 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
+    "browserslist": "^4.23.0",
     "modern-normalize": "^1.1.0",
     "slim-select": "^2.8.2"
   },
